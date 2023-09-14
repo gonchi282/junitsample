@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="60dp"
+        android:text="calc"
+        app:layout_constraintStart_toStartOf="@+id/edittext_a"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_a" />
+
+    <EditText
+        android:id="@+id/edittext_a"
+        android:layout_width="78dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edittext_b"
+        android:layout_width="80dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="28dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/edittext_a"
+        app:layout_constraintTop_toTopOf="@+id/edittext_a" />
+
+    <TextView
+        android:id="@+id/textview_result"
+        android:layout_width="69dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="36dp"
+        app:layout_constraintStart_toEndOf="@+id/edittext_b"
+        app:layout_constraintTop_toTopOf="@+id/edittext_b" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
